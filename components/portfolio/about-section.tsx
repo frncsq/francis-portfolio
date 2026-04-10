@@ -6,7 +6,20 @@ export function AboutSection() {
           About Me
         </h2>
 
-        <div className="grid md:grid-cols-2 gap-12">
+        <div className="grid md:grid-cols-2 gap-12 items-start">
+          <div>
+            {/* Profile Photo */}
+            <div className="mb-8 md:mb-0 flex justify-center md:justify-start">
+              <div className="w-48 h-48 md:w-64 md:h-64 rounded-lg border-4 border-primary overflow-hidden bg-muted shadow-lg">
+                <img
+                  src="/profile-photo.jpg"
+                  alt="Francis Quintinita"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+          </div>
+
           <div>
             <p className="text-base md:text-lg text-muted-foreground mb-6 leading-relaxed">
               I'm a passionate full stack developer with a strong foundation in
