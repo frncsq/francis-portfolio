@@ -25,7 +25,7 @@ export function HeroSection() {
 
         <p className="text-base md:text-lg text-muted-foreground mb-12 max-w-2xl mx-auto text-balance">
           I specialize in building responsive, scalable applications using modern
-          technologies like React, Node.js, and cloud services. Let's bring your
+          technologies like React, Node.js, and PostgreSQL. Let's bring your
           ideas to life.
         </p>
 

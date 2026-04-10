@@ -23,7 +23,7 @@ export function AboutSection() {
           <div>
             <p className="text-base md:text-lg text-muted-foreground mb-6 leading-relaxed">
               I'm a passionate full stack developer with a strong foundation in
-              building web applications. With expertise in both frontend and
+              building modern web applications. With expertise in both frontend and
               backend technologies, I create seamless, user-centric solutions
               that solve real problems.
             </p>
@@ -52,28 +52,21 @@ export function AboutSection() {
                 <div>
                   <h4 className="font-semibold text-primary mb-2">Frontend</h4>
                   <p className="text-muted-foreground">
-                    React, Next.js, TypeScript, Tailwind CSS, JavaScript
+                    HTML, CSS, JavaScript, React, TypeScript
                   </p>
                 </div>
 
                 <div>
                   <h4 className="font-semibold text-primary mb-2">Backend</h4>
                   <p className="text-muted-foreground">
-                    Node.js, Express, Python, REST APIs, GraphQL
-                  </p>
-                </div>
-
-                <div>
-                  <h4 className="font-semibold text-primary mb-2">Database</h4>
-                  <p className="text-muted-foreground">
-                    PostgreSQL, MongoDB, Firebase, Prisma ORM
+                    Node.js, Express, PostgreSQL, REST APIs
                   </p>
                 </div>
 
                 <div>
                   <h4 className="font-semibold text-primary mb-2">Tools</h4>
                   <p className="text-muted-foreground">
-                    Git, Docker, AWS, Vercel, Figma, Linux
+                    Git, Docker, AWS, Vercel, Figma
                   </p>
                 </div>
               </div>

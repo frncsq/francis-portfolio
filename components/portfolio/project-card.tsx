@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button';
 interface ProjectCardProps {
   title: string;
   description: string;
+  image?: string;
   tags: string[];
   github: string;
   demo: string;
@@ -12,12 +13,22 @@ interface ProjectCardProps {
 export function ProjectCard({
   title,
   description,
+  image,
   tags,
   github,
   demo,
 }: ProjectCardProps) {
   return (
     <div className="bg-card border border-border rounded-lg overflow-hidden hover:shadow-lg hover:border-primary/50 transition-all duration-300 flex flex-col h-full">
+      {image && (
+        <div className="aspect-video w-full overflow-hidden bg-muted">
+          <img
+            src={image}
+            alt={title}
+            className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+          />
+        </div>
+      )}
       <div className="p-6 flex-1 flex flex-col">
         <h3 className="text-xl font-bold text-foreground mb-3">{title}</h3>
 

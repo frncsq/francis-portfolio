@@ -127,20 +127,20 @@ export function ContactSection() {
 
               <div className="space-y-4">
                 <a
-                  href="mailto:hello@example.com"
+                  href="mailto:quintinitafrancis8@gmail.com"
                   className="flex items-center gap-4 p-4 rounded-lg bg-secondary hover:bg-secondary/80 transition-colors group"
                 >
                   <Mail className="h-6 w-6 text-primary" />
                   <div>
                     <p className="font-medium text-foreground">Email</p>
                     <p className="text-muted-foreground text-sm">
-                      hello@example.com
+                      quintinitafrancis8@gmail.com
                     </p>
                   </div>
                 </a>
 
                 <a
-                  href="https://linkedin.com"
+                  href="https://linkedin.com/in/francis-quintinita-5b492b3ab"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-4 p-4 rounded-lg bg-secondary hover:bg-secondary/80 transition-colors"
@@ -149,13 +149,13 @@ export function ContactSection() {
                   <div>
                     <p className="font-medium text-foreground">LinkedIn</p>
                     <p className="text-muted-foreground text-sm">
-                      linkedin.com/in/yourprofile
+                      linkedin.com/in/francis-quintinita-5b492b3ab
                     </p>
                   </div>
                 </a>
 
                 <a
-                  href="https://github.com"
+                  href="https://github.com/frncsq"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-4 p-4 rounded-lg bg-secondary hover:bg-secondary/80 transition-colors"
@@ -164,7 +164,7 @@ export function ContactSection() {
                   <div>
                     <p className="font-medium text-foreground">GitHub</p>
                     <p className="text-muted-foreground text-sm">
-                      github.com/yourprofile
+                      github.com/frncsq
                     </p>
                   </div>
                 </a>
