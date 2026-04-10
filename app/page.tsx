@@ -3,7 +3,7 @@ import { HeroSection } from '@/components/portfolio/hero-section';
 import { AboutSection } from '@/components/portfolio/about-section';
 import { ProjectsSection } from '@/components/portfolio/projects-section';
 import { SkillsSection } from '@/components/portfolio/skills-section';
-import { ExperienceSection } from '@/components/portfolio/experience-section';
+
 import { ContactSection } from '@/components/portfolio/contact-section';
 import { Footer } from '@/components/portfolio/footer';
 import { ScrollToTopButton } from '@/components/portfolio/scroll-to-top-button';
@@ -22,7 +22,7 @@ export default function Home() {
       <AboutSection />
       <ProjectsSection />
       <SkillsSection />
-      <ExperienceSection />
+
       <ContactSection />
       <Footer />
       <ScrollToTopButton />
