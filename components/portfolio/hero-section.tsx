@@ -15,6 +15,17 @@ export function HeroSection() {
       className="min-h-screen flex items-center justify-center bg-gradient-to-b from-background to-secondary/20 px-4"
     >
       <div className="max-w-4xl mx-auto text-center py-20">
+        {/* Profile Photo */}
+        <div className="mb-8 flex justify-center">
+          <div className="w-32 h-32 md:w-40 md:h-40 rounded-full border-4 border-primary overflow-hidden bg-muted shadow-lg">
+            <img
+              src="/profile-photo.jpg"
+              alt="Francis Quintinita"
+              className="w-full h-full object-cover"
+            />
+          </div>
+        </div>
+
         <h1 className="text-5xl md:text-7xl font-bold text-foreground mb-6 text-balance">
           Francis <span className="text-primary">Quintinita</span>
         </h1>
