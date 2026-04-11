@@ -6,7 +6,6 @@ export const projects = [
     image: "/projects/parkwise.png",
     tags: ["React Native", "Node.js", "Express", "PostgreSQL"],
     github: "https://github.com",
-    demo: "https://example.com",
     featured: true,
   },
   {
@@ -16,17 +15,15 @@ export const projects = [
     image: "/projects/bite.png",
     tags: ["React Native", "Express", "Node.js", "PostgreSQL"],
     github: "https://github.com",
-    demo: "https://example.com",
     featured: true,
   },
   {
     id: 3,
-    title: "Akwa-Flo: Water Management System",
-    description: "A mobile application that helps users order water, monitor their water consumption and provides real-time information about water availability.",
+    title: "Akwa-Flo: Water Refilling Management System",
+    description: "A mobile application that helps users order water, reserve water refilling slots and provides real-time information about water availability.",
     image: "/projects/akwa.png",
     tags: ["React", "Node.js", "PostgreSQL"],
     github: "https://github.com",
-    demo: "https://example.com",
     featured: true,
   },
 ];
