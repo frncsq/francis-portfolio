@@ -27,18 +27,18 @@ export function ProjectCard({
           />
         </div>
       )}
-      <div className="p-6 flex-1 flex flex-col">
-        <h3 className="text-xl font-bold text-foreground mb-3">{title}</h3>
+      <div className="p-5 flex-1 flex flex-col">
+        <h3 className="text-lg font-bold text-foreground mb-2">{title}</h3>
 
-        <p className="text-muted-foreground mb-6 flex-1 leading-relaxed">
+        <p className="text-muted-foreground mb-4 flex-1 leading-relaxed text-sm">
           {description}
         </p>
 
-        <div className="flex flex-wrap gap-2 mb-6">
+        <div className="flex flex-wrap gap-2 mb-4">
           {tags.map((tag) => (
             <span
               key={tag}
-              className="bg-primary/10 text-primary text-xs font-medium px-3 py-1 rounded-full"
+              className="bg-primary/10 text-primary text-[10px] font-medium px-2 py-0.5 rounded-full"
             >
               {tag}
             </span>
@@ -46,7 +46,7 @@ export function ProjectCard({
         </div>
       </div>
 
-      <div className="px-6 pb-6 flex gap-3 border-t border-border pt-6">
+      <div className="px-5 pb-5 flex gap-2 border-t border-border pt-4">
         <Button
           variant="outline"
           size="sm"

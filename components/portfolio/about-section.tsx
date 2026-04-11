@@ -10,11 +10,11 @@ export function AboutSection() {
           <div>
             {/* Profile Photo */}
             <div className="mb-8 md:mb-0 flex justify-center md:justify-start">
-              <div className="w-48 h-48 md:w-64 md:h-64 rounded-lg border-4 border-primary overflow-hidden bg-muted shadow-lg">
+              <div className="w-48 md:w-72 rounded-lg border-4 border-primary overflow-hidden bg-muted shadow-lg">
                 <img
-                  src="/profile-photo.jpg"
+                  src="/fqdev.jpeg"
                   alt="Francis Quintinita"
-                  className="w-full h-full object-cover"
+                  className="w-full h-auto object-contain"
                 />
               </div>
             </div>
@@ -42,34 +42,33 @@ export function AboutSection() {
             </p>
           </div>
 
-          <div>
-            <div className="bg-secondary rounded-lg p-8">
-              <h3 className="text-2xl font-semibold text-foreground mb-6">
-                Key Skills
-              </h3>
+        </div>
 
-              <div className="space-y-4">
-                <div>
-                  <h4 className="font-semibold text-primary mb-2">Frontend</h4>
-                  <p className="text-muted-foreground">
-                    HTML, CSS, JavaScript, React, TypeScript
-                  </p>
-                </div>
+        <div className="mt-16 bg-secondary/30 rounded-lg p-10 text-center">
+          <h3 className="text-2xl font-semibold text-foreground mb-10">
+            Key Skills
+          </h3>
 
-                <div>
-                  <h4 className="font-semibold text-primary mb-2">Backend</h4>
-                  <p className="text-muted-foreground">
-                    Node.js, Express, PostgreSQL, REST APIs
-                  </p>
-                </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+            <div>
+              <h4 className="font-semibold text-primary mb-3">Frontend</h4>
+              <p className="text-muted-foreground">
+                HTML, CSS, JavaScript, React, TypeScript
+              </p>
+            </div>
 
-                <div>
-                  <h4 className="font-semibold text-primary mb-2">Tools</h4>
-                  <p className="text-muted-foreground">
-                    Git, Docker, AWS, Vercel, Figma
-                  </p>
-                </div>
-              </div>
+            <div>
+              <h4 className="font-semibold text-primary mb-3">Backend</h4>
+              <p className="text-muted-foreground">
+                Node.js, Express, PostgreSQL, REST APIs
+              </p>
+            </div>
+
+            <div>
+              <h4 className="font-semibold text-primary mb-3">Tools</h4>
+              <p className="text-muted-foreground">
+                Git, Docker, AWS, Vercel, Figma
+              </p>
             </div>
           </div>
         </div>
