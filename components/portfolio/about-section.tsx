@@ -6,39 +6,34 @@ export function AboutSection() {
           About Me
         </h2>
 
-        <div className="grid md:grid-cols-2 gap-10 md:gap-12 items-center">
-          <div>
+        <div className="grid md:grid-cols-[auto_1fr] gap-10 md:gap-16 items-start">
+          <div className="flex justify-center md:justify-start">
             {/* Profile Photo */}
-            <div className="mb-8 md:mb-0 flex justify-center md:justify-center">
-              <div className="w-32 sm:w-36 md:w-40 max-w-[180px] aspect-square rounded-2xl border border-border/60 bg-card p-2 shadow-sm overflow-hidden">
-                <img
-                  src="/fqdev.jpeg"
-                  alt="Francis Quintinita"
-                  className="w-full h-full object-cover object-center rounded-xl"
-                />
-              </div>
+            <div className="w-32 sm:w-36 md:w-44 max-w-[200px] aspect-square rounded-2xl border border-border/60 bg-card p-2 shadow-sm overflow-hidden">
+              <img
+                src="/fqdev.jpeg"
+                alt="Francis Quintinita"
+                className="w-full h-full object-cover object-center rounded-xl"
+              />
             </div>
           </div>
 
-          <div>
-            <p className="text-base md:text-lg text-muted-foreground mb-6 leading-relaxed">
-              I'm a full stack developer with a strong foundation in
-              building modern web applications. With expertise in both frontend and
-              backend technologies, I create seamless, user-centric solutions
-              that solve real problems.
+          <div className="space-y-6">
+            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
+              I am a Full Stack Developer dedicated to crafting robust, high-performance web applications.
+              Bridging the gap between clean, engaging user experiences and scalable backend architectures,
+              I design solutions that are as intuitive as they are technically sound.
             </p>
 
-            <p className="text-base md:text-lg text-muted-foreground mb-6 leading-relaxed">
-              I love learning new technologies, collaborating with teams, and
-              pushing the boundaries of what's possible on the web. When I'm not
-              coding, you can find me contributing to open-source projects or
-              exploring the latest web development trends.
+            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
+              With a passion for technical excellence, I thrive in collaborative environments that push the
+              boundaries of modern web technology. I focus on writing maintainable code, optimizing performance,
+              and implementing engineering best practices.
             </p>
 
-            <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-              My approach is problem-solving first. I focus on understanding
-              requirements deeply, planning thoroughly, and executing cleanly
-              to deliver solutions that exceed expectations.
+            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
+              My engineering philosophy centers on thorough planning, clear communication, and precise execution,
+              ensuring every product delivers outstanding user experiences and business value.
             </p>
           </div>
 
