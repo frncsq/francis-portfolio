@@ -22,7 +22,7 @@ export function AboutSection() {
 
           <div>
             <p className="text-base md:text-lg text-muted-foreground mb-6 leading-relaxed">
-              I'm a passionate full stack developer with a strong foundation in
+              I'm a full stack developer with a strong foundation in
               building modern web applications. With expertise in both frontend and
               backend technologies, I create seamless, user-centric solutions
               that solve real problems.
