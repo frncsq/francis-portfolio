@@ -6,15 +6,15 @@ export function AboutSection() {
           About Me
         </h2>
 
-        <div className="grid md:grid-cols-2 gap-12 items-start">
+        <div className="grid md:grid-cols-2 gap-10 md:gap-12 items-center">
           <div>
             {/* Profile Photo */}
-            <div className="mb-8 md:mb-0 flex justify-center md:justify-start">
-              <div className="w-48 md:w-72 rounded-lg border-4 border-primary overflow-hidden bg-muted shadow-lg">
+            <div className="mb-8 md:mb-0 flex justify-center md:justify-center">
+              <div className="w-32 sm:w-36 md:w-40 max-w-[180px] aspect-square rounded-2xl border border-border/60 bg-card p-2 shadow-sm overflow-hidden">
                 <img
                   src="/fqdev.jpeg"
                   alt="Francis Quintinita"
-                  className="w-full h-auto object-contain"
+                  className="w-full h-full object-cover object-center rounded-xl"
                 />
               </div>
             </div>
