@@ -128,12 +128,12 @@ export function ContactSection() {
               <div className="space-y-4">
                 <a
                   href="mailto:quintinitafrancis8@gmail.com"
-                  className="flex items-center gap-4 p-4 rounded-lg bg-secondary hover:bg-secondary/80 transition-colors group"
+                  className="flex items-center gap-3 sm:gap-4 p-3.5 sm:p-4 rounded-lg bg-secondary hover:bg-secondary/80 transition-colors group min-w-0"
                 >
-                  <Mail className="h-6 w-6 text-primary" />
-                  <div>
-                    <p className="font-medium text-foreground">Email</p>
-                    <p className="text-muted-foreground text-sm">
+                  <Mail className="h-5 w-5 sm:h-6 sm:w-6 text-primary shrink-0" />
+                  <div className="min-w-0 flex-1">
+                    <p className="font-medium text-foreground text-sm sm:text-base">Email</p>
+                    <p className="text-muted-foreground text-xs sm:text-sm truncate">
                       quintinitafrancis8@gmail.com
                     </p>
                   </div>
@@ -143,12 +143,12 @@ export function ContactSection() {
                   href="https://linkedin.com/in/francis-quintinita-5b492b3ab"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-4 p-4 rounded-lg bg-secondary hover:bg-secondary/80 transition-colors"
+                  className="flex items-center gap-3 sm:gap-4 p-3.5 sm:p-4 rounded-lg bg-secondary hover:bg-secondary/80 transition-colors min-w-0"
                 >
-                  <Linkedin className="h-6 w-6 text-primary" />
-                  <div>
-                    <p className="font-medium text-foreground">LinkedIn</p>
-                    <p className="text-muted-foreground text-sm">
+                  <Linkedin className="h-5 w-5 sm:h-6 sm:w-6 text-primary shrink-0" />
+                  <div className="min-w-0 flex-1">
+                    <p className="font-medium text-foreground text-sm sm:text-base">LinkedIn</p>
+                    <p className="text-muted-foreground text-xs sm:text-sm truncate">
                       linkedin.com/in/francis-quintinita-5b492b3ab
                     </p>
                   </div>
@@ -158,12 +158,12 @@ export function ContactSection() {
                   href="https://github.com/frncsq"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-4 p-4 rounded-lg bg-secondary hover:bg-secondary/80 transition-colors"
+                  className="flex items-center gap-3 sm:gap-4 p-3.5 sm:p-4 rounded-lg bg-secondary hover:bg-secondary/80 transition-colors min-w-0"
                 >
-                  <Github className="h-6 w-6 text-primary" />
-                  <div>
-                    <p className="font-medium text-foreground">GitHub</p>
-                    <p className="text-muted-foreground text-sm">
+                  <Github className="h-5 w-5 sm:h-6 sm:w-6 text-primary shrink-0" />
+                  <div className="min-w-0 flex-1">
+                    <p className="font-medium text-foreground text-sm sm:text-base">GitHub</p>
+                    <p className="text-muted-foreground text-xs sm:text-sm truncate">
                       github.com/frncsq
                     </p>
                   </div>

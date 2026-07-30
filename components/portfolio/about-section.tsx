@@ -2,7 +2,7 @@ export function AboutSection() {
   return (
     <section id="about" className="py-20 px-4 bg-background">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-12 text-balance">
+        <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-12 text-balance">
           About Me
         </h2>
 
@@ -19,7 +19,7 @@ export function AboutSection() {
           </div>
 
           <div className="space-y-6">
-            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
+            <p className="text-base md:text-xl text-muted-foreground leading-relaxed">
               I am a Full Stack Developer dedicated to crafting robust, high-performance web applications.
               Bridging the gap between clean, engaging user experiences and scalable backend architectures,
               I design solutions that are as intuitive as they are technically sound.
@@ -30,16 +30,11 @@ export function AboutSection() {
               boundaries of modern web technology. I focus on writing maintainable code, optimizing performance,
               and implementing engineering best practices.
             </p>
-
-            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-              My engineering philosophy centers on thorough planning, clear communication, and precise execution,
-              ensuring every product delivers outstanding user experiences and business value.
-            </p>
           </div>
 
         </div>
 
-        <div className="mt-16 bg-secondary/30 rounded-lg p-10 text-center">
+        <div className="mt-12 sm:mt-16 bg-secondary/30 rounded-lg p-6 sm:p-10 text-center">
           <h3 className="text-2xl font-semibold text-foreground mb-10">
             Key Skills
           </h3>
