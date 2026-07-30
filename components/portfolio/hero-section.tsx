@@ -63,7 +63,7 @@ export function HeroSection() {
           <Button
             size="lg"
             onClick={() => handleScroll('#projects')}
-            className="w-full sm:w-auto bg-primary hover:bg-primary/90 text-white text-sm sm:text-base px-8"
+            className="w-full sm:w-auto bg-primary hover:bg-primary/90 text-primary-foreground text-sm sm:text-base px-8"
           >
             View Projects <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
           </Button>

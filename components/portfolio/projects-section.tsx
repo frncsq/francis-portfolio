@@ -12,7 +12,7 @@ export function ProjectsSection() {
           Featured Projects
         </h2>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mb-16">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mb-16 items-start">
           {allProjects.map((project) => (
             <ProjectCard key={project.id} {...project} />
           ))}
@@ -27,7 +27,7 @@ export function ProjectsSection() {
             href="https://github.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block px-8 py-3 bg-primary hover:bg-primary/90 text-white font-medium rounded-lg transition-colors"
+            className="inline-block px-8 py-3 bg-primary hover:bg-primary/90 text-primary-foreground font-medium rounded-lg transition-colors"
           >
             View More on GitHub
           </a>

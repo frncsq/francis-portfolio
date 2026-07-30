@@ -105,7 +105,7 @@ export function ContactSection() {
 
               <Button
                 type="submit"
-                className="w-full bg-primary hover:bg-primary/90 text-white font-medium"
+                className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-medium"
               >
                 Send Message
               </Button>

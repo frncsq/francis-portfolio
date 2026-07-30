@@ -1,13 +1,32 @@
 'use client';
 
-import { useState } from 'react';
-import { Menu, X, Moon, Sun, ChevronRight } from 'lucide-react';
+import { useState, useEffect } from 'react';
+import { Menu, X, Moon, Sun, ChevronRight, Clock } from 'lucide-react';
 import { useTheme } from 'next-themes';
 import { Button } from '@/components/ui/button';
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const { theme, setTheme } = useTheme();
+  const [time, setTime] = useState<string>('');
+
+  useEffect(() => {
+    const updateTime = () => {
+      const now = new Date();
+      setTime(
+        now.toLocaleTimeString([], {
+          hour: '2-digit',
+          minute: '2-digit',
+          second: '2-digit',
+          hour12: true,
+        })
+      );
+    };
+
+    updateTime();
+    const timer = setInterval(updateTime, 1000);
+    return () => clearInterval(timer);
+  }, []);
 
   const navLinks = [
     { href: '#home', label: 'Home' },
@@ -59,8 +78,15 @@ export function Navbar() {
             ))}
           </div>
 
-          {/* Theme and Mobile Menu Toggle */}
+          {/* Real-time Clock & Theme Toggle */}
           <div className="flex items-center gap-2 sm:gap-3">
+            {time && (
+              <div className="hidden min-[380px]:flex items-center gap-1.5 text-[11px] font-mono text-muted-foreground bg-secondary/60 border border-border/50 px-2.5 sm:px-3 py-1 rounded-full shadow-inner">
+                <Clock className="h-3 w-3 text-primary animate-pulse" />
+                <span>{time}</span>
+              </div>
+            )}
+
             <Button
               variant="ghost"
               size="icon"
