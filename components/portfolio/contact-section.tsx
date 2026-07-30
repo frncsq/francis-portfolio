@@ -34,7 +34,7 @@ export function ContactSection() {
   return (
     <section id="contact" className="py-20 px-4 bg-background">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4 text-balance">
+        <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4 text-balance">
           Let's Connect
         </h2>
 

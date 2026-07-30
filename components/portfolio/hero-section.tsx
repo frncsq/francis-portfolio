@@ -1,9 +1,38 @@
 'use client';
 
+import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
 
 export function HeroSection() {
+  const roles = ['Full Stack Developer', 'UI/UX Enthusiast', 'Problem Solver', 'Tech Explorer'];
+  const [roleIndex, setRoleIndex] = useState(0);
+  const [charIndex, setCharIndex] = useState(0);
+  const [isDeleting, setIsDeleting] = useState(false);
+
+  useEffect(() => {
+    const currentRole = roles[roleIndex];
+
+    const timeout = setTimeout(() => {
+      if (!isDeleting) {
+        if (charIndex < currentRole.length) {
+          setCharIndex(charIndex + 1);
+        } else {
+          setTimeout(() => setIsDeleting(true), 1500);
+        }
+      } else {
+        if (charIndex > 0) {
+          setCharIndex(charIndex - 1);
+        } else {
+          setIsDeleting(false);
+          setRoleIndex((roleIndex + 1) % roles.length);
+        }
+      }
+    }, isDeleting ? 40 : 80);
+
+    return () => clearTimeout(timeout);
+  }, [charIndex, isDeleting, roleIndex]);
+
   const handleScroll = (target: string) => {
     const element = document.querySelector(target);
     element?.scrollIntoView({ behavior: 'smooth' });
@@ -19,8 +48,9 @@ export function HeroSection() {
           Francis <span className="text-primary">Quintinita</span>
         </h1>
 
-        <p className="text-xl md:text-2xl text-muted-foreground mb-8 text-balance">
-          Full Stack Developer crafting beautiful and functional web experiences
+        <p className="text-xl md:text-2xl text-muted-foreground mb-8 h-9">
+          <span>{roles[roleIndex].substring(0, charIndex)}</span>
+          <span className="inline-block w-[2px] h-6 bg-primary ml-0.5 align-middle animate-pulse" />
         </p>
 
         <p className="text-base md:text-lg text-muted-foreground mb-12 max-w-2xl mx-auto text-balance">

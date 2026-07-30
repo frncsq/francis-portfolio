@@ -7,8 +7,8 @@ export function ProjectsSection() {
 
   return (
     <section id="projects" className="py-20 px-4 bg-secondary/30">
-      <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-12 text-balance">
+      <div className="max-w-5xl mx-auto">
+        <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-12 text-balance">
           Featured Projects
         </h2>
 

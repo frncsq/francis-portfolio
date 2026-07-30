@@ -9,11 +9,11 @@ export function AboutSection() {
         <div className="grid md:grid-cols-[auto_1fr] gap-10 md:gap-16 items-start">
           <div className="flex justify-center md:justify-start">
             {/* Profile Photo */}
-            <div className="w-32 sm:w-36 md:w-44 max-w-[200px] aspect-square rounded-2xl border border-border/60 bg-card p-2 shadow-sm overflow-hidden">
+            <div className="w-32 sm:w-36 md:w-44 max-w-[200px] rounded-2xl border border-border/40 overflow-hidden shadow-sm">
               <img
                 src="/fqdev.jpeg"
                 alt="Francis Quintinita"
-                className="w-full h-full object-cover object-center rounded-xl"
+                className="w-full h-auto"
               />
             </div>
           </div>

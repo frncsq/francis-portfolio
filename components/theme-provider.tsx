@@ -17,5 +17,6 @@ export function ThemeProvider({ children, ...props }: ThemeProviderProps) {
     return <>{children}</>
   }
 
-  return <NextThemesProvider {...props}>{children}</NextThemesProvider>
+  const ThemeProviderComponent = NextThemesProvider as any
+  return <ThemeProviderComponent {...props}>{children}</ThemeProviderComponent>
 }

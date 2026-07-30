@@ -11,7 +11,7 @@ export function SkillsSection() {
   return (
     <section id="skills" className="py-20 px-4 bg-background">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-12 text-balance">
+        <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-12 text-balance">
           Skills & Expertise
         </h2>
 
